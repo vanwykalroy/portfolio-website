@@ -1,0 +1,185 @@
+/* Resetting default browser margins */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif; /* This applies the font to everything */
+}
+
+body {
+    line-height: 1.60;
+    color: #333;
+    background-color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* This pushes the logo left and list right */
+    align-items: center;            /* This centers them vertically */
+    padding: 20px 5%;
+    background-color: #f4f4f4;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;         /* Removes the bullet points*/
+}
+
+nav ul li {
+    margin-left: 20px;        /* Adds space between each link */
+}
+
+nav ul li a {
+    text-decoration: none;    /* Removes the underline */
+    color: #333;
+}
+
+.hero {
+    height: 80vh;             /* 80% of the height */
+    display: flex;
+    flex-direction: column;   /* Stack the H1 and P vertically */
+    justify-content: center;  /* Center them vertically */
+    align-items: center;      /* Center them horizontally */
+    text-align: center;       /* Center the text itself */
+    padding: 0 10%;
+    background-color: #fff; /* Clean white backgroup */
+}
+
+.hero h1 {
+    font-size: 3rem;         /* Make it big and bold */
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;          /* A lighter grey for the subtext */
+}
+
+#projects {
+    padding: 60px 10%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    /* This creates 3 equal columns */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px; /* Spacde between the cards */
+}
+
+.project-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;    /* Round the corners slightly */
+}
+
+.project-image {
+    height: 150px;
+    background-color: #ddd; /* A placeholder for an image */
+    margin-bottom: 15px;
+}
+
+#about {
+    background-color: #222; /* Dark background for contrast */
+    color: #fff;            /* White text */
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 800px;         /* Keeps the text from stretching too wide */
+    margin: 0 auto;           /* Center the container itself */
+}
+
+#about h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;         /* Add space between lines of text for readibility */
+}
+
+footer {
+    padding: 50px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee; /* A sublte line to seperate it from the content */
+}
+
+.social-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.social-links a:hover {
+    color: #007bff; /* Changes color when you hover over it */
+}
+
+#contact {
+    padding: 80px 20px;
+    background-color: #f9f9f9; /* Light grey to seperate from About section */
+    text-align: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submit-btn {
+    padding: 12px 24px;
+    background-color: #000;
+    color:#fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 700;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+}
+
+/* When the screen is 768px wide or less (tablets/phones) */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Switch from 3 colums to 1 */
+    }
+
+    nav {
+        flex-direction: column; /* Stack logo and nav links vertically */
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Make the text slightly smaller for small screens */
+    }
+}

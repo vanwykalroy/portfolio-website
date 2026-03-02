@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Alroy Van Wyk | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header: WHere the navigation lives -->
+     <header>
+        <nav>
+            <div class="logo">Alroy Van Wyk</div>
+            <ul>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- Hero: Your first impression -->
+      <section class="hero">
+        <h1 id="greeting">Building digital experiences in Cape Town</h1>
+        <p>I'm a student passionate about clean code and minimalistic design</p>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">My Work</h2>
+
+        <div class="projects-grid">
+            <!-- Project Card 1-->
+             <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Project One</h3>
+                <p>A brief description of this cool project.</p>
+             </div>
+
+            <!-- Project Card 2 -->
+            <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Project Two</h3>
+                <p>Another project build in Cape Town.</p>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="project-card">
+                <div class="project-image"></div>
+                <h3>Project Three</h3>
+                <p>Learning the fundamentals of CSS Grid.</p>
+            </div>
+
+        </div>
+      </section>
+
+      <section id="about">
+            <div class="about-container">
+                <h2>About Me</h2>
+                <p>
+                    I am a junior developer based in the beautiful city of Cape Town.
+                    I enjoy turning complex problems into simple, beautiful interface designs.
+                    When I'm not coding, you can find me exploring the mountain trails,
+                    checking out our beautiful beaches or studying new web technologies.
+                </p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+
+                <form action="https://formspree.io/f/mojnzgob" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="_replyto" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 My Portfolio | Built in Cape Town</p>
+            <div class="social-links">
+                <a href="https://github.com/vanwykalroy" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/alroyvanwyk/" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+
+</body>
+    
+        
